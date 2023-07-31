@@ -1,0 +1,11 @@
+
+<div class="toolbar">
+    <div class="logo" (click)="toggleDropDown()"></div>
+    <div class="spacebetween">
+        <app-dropdownmenu *ngIf="showDropDown"></app-dropdownmenu>
+    </div>
+    <div class="sectionbutton" (click)="toggleDropDownTwo()">
+        <app-dropdownmenutwo *ngIf="showDropDownTwo"></app-dropdownmenutwo>
+    </div>
+    <div class="menubutton"></div>
+</div>
