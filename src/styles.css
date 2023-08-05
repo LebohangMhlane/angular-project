@@ -1,4 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 body{
     margin:0px;
+    height: inherit;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+}
+html{
+    height: 100%;
+}
+
+.grey{
+    background-color: grey;
+}
+.black{
+    background-color: black;
 }

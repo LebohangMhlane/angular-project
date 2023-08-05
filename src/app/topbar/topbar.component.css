@@ -1,0 +1,45 @@
+
+.topnavbar{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    cursor: pointer;
+}   
+.section{
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+}
+.topnavbar > :nth-child(1){
+    background-color: yellow;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.topnavbar > :nth-child(2){
+    background-color: blue;
+}
+.topnavbar > :nth-child(3){
+    background-color: grey;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.registerbuttoncontainer{
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    background-color: green;
+}
