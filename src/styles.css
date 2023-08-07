@@ -1,19 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
 body{
+    height: 100vh;
     margin:0px;
-    height: inherit;
     font-family: 'Work Sans', sans-serif;
     font-size: 13px;
-    display: flex;
-    flex-direction: column;
 }
 html{
     height: 100%;
+    overflow: hidden;
+}
+app-root{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+* {
+    box-sizing: border-box;
 }
 
+
+/* color presets */
+.mainbackgroundcolor{
+    background-color: #307584;
+}
 .grey{
     background-color: grey;
 }
 .black{
     background-color: black;
+}
+
+/* scroll bar */
+::-webkit-scrollbar{
+    width: 7px;
+    background-color: white;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #307584;
 }
