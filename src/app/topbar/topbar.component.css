@@ -1,28 +1,26 @@
 
-
 .topnavbar{
     width: 100%;
-    height: 40px;
-    background-color: black;
+    height: 55px;
     display: flex;
     cursor: pointer;
+    font-size: 13px;
 }   
 .section{
     display: flex;
     flex-direction: column;
 }
-.topnavbar > :nth-child(1){
-    background-color: yellow;
+.topnavbar > :nth-child(1){ 
     align-items: center;
     justify-content: center;
     padding-left: 15px;
     padding-right: 15px;
+    font-size: 20px;
 }
 .topnavbar > :nth-child(2){
-    background-color: blue;
+    padding-left: 0px;
 }
 .topnavbar > :nth-child(3){
-    background-color: grey;
     margin-left: auto;
     align-items: center;
     justify-content: center;
@@ -35,12 +33,49 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: grey;
 }
 .dropdown{
     display: none;
     position: absolute;
     width: 200px;
     height: 300px;
+    background-color: green;
+}
+
+
+.navigationbar{
+    min-width: 100%;
+    height: 60px;
+    display: flex;
+    cursor: pointer;
+}
+.navbuttons{
+    height: 100%;
+    flex: 20;
+    display: flex;
+}
+.navbuttons > :nth-child(1), :nth-child(2), :nth-child(3){
+    max-width: fit-content;
+}
+.navbutton{
+    margin-left: 20px;
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+}
+.flag{
+    flex:auto;
+    margin-right: 70px;
+    height: 100%;
+    padding: 10px;
+}
+.theflag{
+    width: 60px;
+    height: 30px;
     background-color: green;
 }

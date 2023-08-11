@@ -1,63 +1,795 @@
 
 
 app-registrationpage{
-    height: 95vh;  
-}
-
-
-.columntitle{
-    color: white;
-    padding: 10px;
-    padding-left: 20px;
-}
-.dividercontainer{
-    width: 100%;
-    margin-bottom: 20px;
-}
-.divider{
-    margin: auto;
-    width: 95%;
-    height: 1px;
-    background-color: #ffffff84;
+    height: 90vh;  
 }
 .sectioncontainer{
-    height: 92vh;
+    width: auto;
+    height: 85%;
 }
-.sectioncontainer > * {
-    height: inherit;
-}
-.middle{
-    width: 550px;
+.threesections{
     height: 100%;
-    border-radius: 10px;
-}
-.padder{
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    overflow: hidden;
-}
-.wrapper{
-    height: 100%;
-    overflow-x: auto;
-}
-.spacer{
-    width: 100%;
-    height: 50px;
-}
-.contractcontainer{
-    width: 95%;
-    height: 300px;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: #13353D;
-    border-radius: 10px;
 }
 
-.box{
-    width: 50%;
+
+.profilecontainer{
+    display: flex;
+}
+.profilesection1{
+    width: 60%;
+}
+.username{
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: white;
+    padding-top: 10%;
+    padding-left: 5%;
+}
+.skills{
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: white;
+    padding-top: 3%;
+    padding-left: 5%;
+}
+.usertype{
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #929292;
+    padding-top: 2%;
+    padding-left: 5%;
+}
+.rating{
+    display: flex;
+    padding-left: 5%;
+    padding-top: 5%;
+}
+.star{
+    width: 20px;
+}
+.profilesection2{
+    flex: auto;
+    padding-top: 5%;
+}
+.profilepicture{
+    width: 140px;
+    height: 140px;
+    background-color: #76B6C5;
+    border-radius: 10px;
+    float: right;
+}
+
+
+
+/* contracts */
+.useranddate{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    padding-top: 3%;
+}
+.user{
+    flex:1;
+    display: flex;
+}
+.name{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: white;
+}
+.userpicture{
+    width: fit-content;
     height: 100%;
-    background-color: grey;
+    display: flex;
+    align-items: center;
+    padding-right: 3%;
+    padding-left: 8%;
+}
+.upicture{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: rgb(254, 254, 254);
+}
+.date{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.datetext{
+    font-size: 13px;
+    color: white;
+    padding-right: 8%;
+}
+
+/* contract details */
+.contractdetails{
+    color: white;
+    font-size: 12px;
+    padding-left: 4%;
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+.servicetag{
+    width: fit-content;
+    padding: 1%;
+    background-color: #76B6C5;
+    border-radius: 10px;
+}
+.details{
+    color: white;
+    font-size: 12px;
+    padding-left: 4%;
+}
+.scopeimages{
+    padding-left: 4%;
+    display: flex;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.scopeimage{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    margin-right: 1%;
+    border-radius: 7px;
+}
+.contractspacer{
+    height: 4%;
+    width: 100%;
+}
+.pay{
+    font-weight: bold;
+}
+
+
+@media screen and (max-width:1182px) {
+
+    /* column section 1 */
+    .section1{
+        padding: 10px;
+        padding-right: 0px;
+        display: none;
+    }
+    .messagescontainer{
+        width: 300px;
+        height: 95%;
+        float: right;
+        border-radius: 10px;
+    }
+
+
+    /* column section 2 */
+    .section2{
+        padding: 10px;
+        height: 100%;
+        max-width: fit-content;
+        display: none;
+    }
+    .availablecontractscontainer{
+        width: 540px;
+        height: 100%;
+        border-radius: 10px;
+    }
+    .sectiontitle{
+        color: white;
+        font-size: 14px;
+        padding: 20px;
+        padding-left: 5%;
+    }
+    .dividercontainer{ 
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+    .divider{
+        width: 100%;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.402);
+    }
+    .viewavailablecontracts{
+        width: 96%;
+        max-height: 78%;    
+        margin-left: 2%;
+        margin-right: 2%;
+        overflow-y: auto;
+    }
+    .contractcontainer{
+        width: 100%;
+        height: 290px;
+    }
+    .availablecontract{
+        background-color: #13353D;
+        width: 95%;
+        height: 95%;
+        margin: auto;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+
+    /* column section 3 */
+    .section3{
+        padding: 0px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    .profilecontainer{
+        width: 100%;
+        height: fit-content;
+    }
+    .contracthistorycontainer{
+        width: 100%;
+        height: 65%;
+        border-radius: 10px;
+        margin-top: 20px;   
+    }
+    .profiledetails{
+        background-color: black;
+        width: 100%;
+        min-height: 30%;
+        max-height: 30%;
+    }
+    .contracthistory{
+        width: 100%;
+        height: 70%;
+    }
+    .viewhistorycontracts{
+        width: 96%;
+        min-height: 79%;
+        max-height: 78%;
+        margin-left: 2%;
+        margin-right: 2%;
+        float: left;
+        overflow-y: auto;
+    }
+    .historycontractcontainer{
+        width: 100%;
+        height: 150px;
+    }
+    .historycontract{
+        background-color: #13353D;
+        width: 95%;
+        height: 90%;
+        margin: auto;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+}
+
+
+@media screen and (max-width:1183px) {
+
+    /* column section 1 */
+    .section1{
+        padding: 10px;
+        padding-right: 0px;
+        display: none;
+    }
+    .messagescontainer{
+        width: 300px;
+        height: 95%;
+        float: right;
+        border-radius: 10px;
+    }
+    .messagecontainer{
+        width: 100%;
+        height: 150px;
+    }
+    .message{
+        background-color: #13353D;
+        width: 95%;
+        height: 90%;
+        margin: auto;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+
+    /* column section 2 */
+    .section2{
+        padding: 10px;
+        height: 100%;
+        max-width: fit-content;
+        display: none;
+    }
+    .availablecontractscontainer{
+        width: 540px;
+        height: 100%;
+        border-radius: 10px;
+    }
+    .sectiontitle{
+        color: white;
+        font-size: 14px;
+        padding: 20px;
+        padding-left: 5%;
+    }
+    .dividercontainer{ 
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+    .divider{
+        width: 100%;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.402);
+    }
+    .viewavailablecontracts{
+        width: 96%;
+        max-height: 78%;
+        margin-left: 2%;
+        margin-right: 2%;
+        overflow-y: auto;
+    }
+    .contractcontainer{
+        width: 100%;
+        height: 290px;
+    }
+    .availablecontract{
+        background-color: #13353D;
+        width: 95%;
+        height: 95%;
+        margin: auto;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+
+    /* column section 3 */
+    .section3{
+        padding: 0px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    .profilecontainer{
+        width: 600px;
+        height: fit-content;
+    }
+    .contracthistorycontainer{
+        width: 600px;
+        height: 65%;
+        border-radius: 10px;
+    }
+    .profiledetails{
+        background-color: black;
+        width: 100%;
+        min-height: 30%;
+        max-height: 30%;
+    }
+    .contracthistory{
+        width: 100%;
+        height: 70%;
+    }
+    .viewhistorycontracts{
+        width: 96%;
+        min-height: 79%;
+        max-height: 78%;
+        margin-left: 2%;
+        margin-right: 2%;
+        float: left;
+        overflow-y: auto;
+    }
+    .historycontractcontainer{
+        width: 100%;
+        height: 150px;
+    }
+    .historycontract{
+        background-color: #13353D;
+        width: 95%;
+        height: 90%;
+        margin: auto;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+}
+
+
+@media screen and (min-width:1184px) {
+
+    /* column section 1 */
+    .section1{
+        padding: 10px;
+        padding-right: 0px;
+        height: 100%;
+    }
+    .messagescontainer{
+        width: 300px;
+        height: 95%;
+        float: right;
+        border-radius: 10px;
+    }
+    .messagecontainer{
+        width: 100%;
+        height: 150px;
+    }
+    .feedback{
+        background-color: #13353D;
+        width: 95%;
+        height: 90%;
+        margin: auto;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+
+    /* column section 2 */
+    .section2{
+        padding: 10px;
+        height: 100%;
+        max-width: fit-content;
+    }
+    .availablecontractscontainer{
+        width: 540px;
+        height: 100%;
+        border-radius: 10px;
+    }
+    .sectiontitle{
+        color: white;
+        font-size: 14px;
+        padding: 20px;
+        padding-left: 5%;
+    }
+    .dividercontainer{ 
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+    .divider{
+        width: 100%;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.402);
+    }
+    .viewavailablecontracts{
+        width: 96%;
+        max-height: 78%;
+        margin-left: 2%;
+        margin-right: 2%;
+        overflow-y: auto;
+    }
+    .contractcontainer{
+        width: 100%;
+        height: 320px;
+    }
+    .availablecontract{
+        background-color: #13353D;
+        width: 95%;
+        height: 95%;
+        margin: auto;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+
+
+    /* column section 3 */
+    .section3{
+        padding: 10px;
+        padding-left: 0px;
+        padding-top: 0px;
+        height: 100%;
+    }
+    .profilecontainer{
+        width: 300px;
+        height: 240px;
+    }
+    .contracthistorycontainer{
+        width: 300px;
+        height: 65%;
+        border-radius: 10px;
+    }
+    .profiledetails{
+        background-color: black;
+        width: 100%;
+        min-height: 30%;
+        max-height: 30%;
+    }
+    .contracthistory{
+        width: 100%;
+        height: 70%;
+    }
+    .viewhistorycontracts{
+        width: 96%;
+        min-height: 79%;
+        max-height: 78%;
+        margin-left: 2%;
+        margin-right: 2%;
+        float: left;
+        overflow-y: auto;
+    }
+    .historycontractcontainer{
+        width: 100%;
+        height: 150px;
+    }
+    .historycontract{
+        background-color: #13353D;
+        width: 95%;
+        height: 90%;
+        margin: auto;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    
+    .profilepicture{
+        width: 100px;
+        height: 100px;
+    }
+
+}
+
+
+@media screen and (min-width:1360px) {
+
+    /* column section 1 */
+    .section1{
+        padding: 10px;
+        padding-right: 0px;
+        height: 100%;
+    }
+    .messagescontainer{
+        width:340px;
+        height: 95%;
+        float: right;
+        border-radius: 10px;
+    }
+    .messagecontainer{
+        width: 100%;
+        height: 150px;
+    }
+    .message{
+        background-color: #13353D;
+        width: 95%;
+        height: 90%;
+        margin: auto;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+
+    /* column section 2 */
+    .section2{
+        padding: 10px;
+        height: 100%;
+        max-width: fit-content;
+    }
+    .availablecontractscontainer{
+        width: 640px;
+        height: 100%;
+        border-radius: 10px;
+    }
+    .sectiontitle{
+        color: white;
+        font-size: 14px;
+        padding: 20px;
+        padding-left: 5%;
+    }
+    .dividercontainer{ 
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+    .divider{
+        width: 100%;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.402);
+    }
+    .viewavailablecontracts{
+        width: 96%;
+        max-height: 78%;
+        margin-left: 2%;
+        margin-right: 2%;
+        overflow-y: auto;
+    }
+    .contractcontainer{
+        width: 100%;
+        height: 340px;
+    }
+    .availablecontract{
+        background-color: #13353D;
+        width: 95%;
+        height: 95%;
+        margin: auto;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+
+    /* column section 3 */
+    .section3{
+        padding: 10px;
+        padding-left: 0px;
+        padding-top: 0px;
+        height: 100%;
+    }
+    .profilecontainer{
+        width: 340px;
+        height: 230px;
+    }
+    .contracthistorycontainer{
+        width: 340px;
+        height: 65%;
+        border-radius: 10px;
+    }
+    .profiledetails{
+        background-color: black;
+        width: 100%;
+        min-height: 30%;
+        max-height: 30%;
+    }
+    .contracthistory{
+        width: 100%;
+        height: 70%;
+    }
+    .viewhistorycontracts{
+        width: 96%;
+        min-height: 79%;
+        max-height: 78%;
+        margin-left: 2%;
+        margin-right: 2%;
+        float: left;
+        overflow-y: auto;
+    }
+    .historycontractcontainer{
+        width: 100%;
+        height: 150px;
+    }
+    .historycontract{
+        background-color: #13353D;
+        width: 95%; 
+        height: 90%;
+        margin: auto;
+        border-radius: 10px;    
+        cursor: pointer;
+    }
+
+    .profilepicture{
+        width: 100px;
+        height: 100px;
+        background-color: #76B6C5;
+        border-radius: 10px;
+        float: right;
+    }
+
+}
+
+
+@media screen and (min-width:1522px) {
+
+    /* column section 1 */
+    .section1{
+        padding: 10px;
+        padding-right: 0px;
+        height: 100%;
+    }
+    .messagescontainer{
+        width:360px;
+        height: 95%;
+        float: right;
+        border-radius: 10px;
+    }
+    .messagecontainer{
+        width: 100%;
+        height: 150px;
+    }
+    .message{
+        background-color: #13353D;
+        width: 95%;
+        height: 90%;
+        margin: auto;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+
+
+    /* column section 2 */
+    .section2{
+        padding: 10px;
+        height: 100%;
+        max-width: fit-content;
+    }
+    .availablecontractscontainer{
+        width: 650px;
+        height: 100%;
+        border-radius: 10px;
+    }
+    .sectiontitle{
+        color: white;
+        font-size: 14px;
+        padding: 20px;
+        padding-left: 5%;
+    }
+    .dividercontainer{ 
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+    .divider{
+        width: 100%;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.402);
+    }
+    .viewavailablecontracts{
+        width: 96%;
+        max-height: 78%;
+        margin-left: 2%;
+        margin-right: 2%;
+        overflow-y: auto;
+    }
+    .contractcontainer{
+        width: 100%;
+        height: 340px;
+    }
+    .availablecontract{
+        background-color: #13353D;
+        width: 95%;
+        height: 95%;
+        margin: auto;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+
+    /* column section 3 */
+    .section3{
+        padding: 10px;
+        padding-left: 0px;
+        padding-top: 0px;
+        height: 100%;
+    }
+    .profilecontainer{
+        width: 360px;
+        height: 230px;
+    }
+    .contracthistorycontainer{
+        width: 360px;
+        height: 65%;
+        border-radius: 10px;
+    }
+    .profiledetails{
+        background-color: black;
+        width: 100%;
+        min-height: 30%;
+        max-height: 30%;
+    }
+    .contracthistory{
+        width: 100%;
+        height: 70%;
+    }
+    .viewhistorycontracts{
+        width: 96%;
+        min-height: 79%;
+        max-height: 78%;
+        margin-left: 2%;
+        margin-right: 2%;
+        float: left;
+        overflow-y: auto;
+    }
+    .historycontractcontainer{
+        width: 100%;
+        height: 150px;
+    }
+    .historycontract{
+        background-color: #13353D;
+        width: 95%;
+        height: 90%;
+        margin: auto;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
 }
