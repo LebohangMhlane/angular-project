@@ -9,27 +9,36 @@
                 <div class="sectiontitle">Feedback</div>
                 <div class="dividercontainer"><div class="divider"></div></div>
                 <div class="viewavailablecontracts">
-                    <div class="messagecontainer ">
-                        <div class="feedback"></div>
+
+                    <div class="messagecontainer" *ngFor="let feedBackMessage of feedBackMessages">
+                        <div class="feedback">
+                            <div class="useranddate">
+                                <div class="user">
+                                    <div class="userpicture">
+                                        <div class="upicture"></div>
+                                    </div>
+                                    <div class="name feedbackname">Lebohang Mhlane</div>
+                                </div>
+                                <div class="date">
+                                    <div class="feedbackdate">3 January 2023</div>
+                                </div>
+                            </div>
+                            <div class="feedbackmessage">{{ feedBackMessage.message }}</div>
+                            <div class="contractspacer"></div>
+                            <div class="details">Trust Rated: {{ feedBackMessage.rating }}/5</div>
+                            <div class="rating">
+                                <div *ngIf="feedBackMessage.ratingSystem.oneStarRating"></div>
+                                <div *ngIf="feedBackMessage.ratingSystem.lowRating">
+                                    <img class="star" src="assets/Star-6-yellow.svg" alt="" *ngFor="let star of feedBackMessage.ratingSystem.renderYellowStars()">
+                                </div>
+                                <div *ngIf="feedBackMessage.ratingSystem.lowRating == false">
+                                    <img class="star" src="assets/Star-6.svg" alt="" *ngFor="let star of feedBackMessage.ratingSystem.renderGreenStars()">
+                                </div>
+                                <img class="star" src="assets/Star-6-white.svg" alt="" *ngFor="let star of feedBackMessage.ratingSystem.renderWhiteStars()">
+                            </div>
+                        </div>
                     </div>
-                    <div class="messagecontainer ">
-                        <div class="feedback"></div>
-                    </div>
-                    <div class="messagecontainer ">
-                        <div class="feedback"></div>
-                    </div>
-                    <div class="messagecontainer ">
-                        <div class="feedback"></div>
-                    </div>
-                    <div class="messagecontainer ">
-                        <div class="feedback"></div>
-                    </div>
-                    <div class="messagecontainer ">
-                        <div class="feedback"></div>
-                    </div>
-                    <div class="messagecontainer ">
-                        <div class="feedback"></div>
-                    </div>
+
                 </div> 
             </div>
         </div>
@@ -38,19 +47,18 @@
         <!-- available contracts -->
         <div class="col section2 darkerthemecolor">
             <div class="availablecontractscontainer mainbackgroundcolor">
-                <div class="sectiontitle">Offers</div>  
+                <div class="sectiontitle">Offers</div>
                 <div class="dividercontainer"><div class="divider"></div></div>
-                <div class="viewavailablecontracts">
-                    
-                    <div class="contractcontainer ">
-                        <div class="availablecontract">
+                <div class="viewavailablecontractsmiddle bottomfader">
 
+                    <div class="contractcontainer" *ngFor="let contract of availabeContracts">
+                        <div class="availablecontract">
                             <div class="useranddate">
                                 <div class="user">
                                     <div class="userpicture">
                                         <div class="upicture"></div>
                                     </div>
-                                    <div class="name">Lebohang Asanda Mhlane</div>s
+                                    <div class="name">{{ contract.userProfile.getFullName() }}</div>
                                 </div>
                                 <div class="date">
                                     <div class="datetext">3 January 2023</div>
@@ -58,9 +66,9 @@
                             </div>
 
                             <div class="contractdetails">
-                                Seeking service: <span class="servicetag">Domestic Worker</span> Ongoing 3 Months
+                                Seeking service: <span class="servicetag">{{ contract.service }}</span> <span *ngIf="contract.isOnGoing"> Ongoing {{ contract.periodInMonths }} Months</span>
                             </div>
-                            <div class="details">Offer: <span class="pay">R 4000 /pm</span>  negotiable</div>
+                            <div class="details offerdetails">Offer: <span class="pay">R {{ contract.offerFee }} <span *ngIf="contract.isOnGoing">/pm</span> </span>  negotiable</div>
                             <div class="details">Job Scope:</div>
                             <div class="scopeimages">
                                 <div src="" alt="" class="scopeimage"></div>
@@ -68,25 +76,13 @@
                                 <div src="" alt="" class="scopeimage"></div>
                                 <div src="" alt="" class="scopeimage"></div>
                             </div>
-                            <div class="details">Location: Westville, Durban, South Africa</div>
+                            <div class="details">Location: {{ contract.location }}</div>
                             <div class="contractspacer"></div>
                             <div class="details">Additional Info:</div>
-                            <div class="details">Please note that you will be required to wear provided uniform</div>
+                            <div class="details">{{ contract.additionalInfo }}</div>
                         </div>
                     </div>
 
-                    <div class="contractcontainer ">
-                        <div class="availablecontract"></div>
-                    </div>
-                    <div class="contractcontainer ">
-                        <div class="availablecontract"></div>
-                    </div>
-                    <div class="contractcontainer ">
-                        <div class="availablecontract"></div>
-                    </div>
-                    <div class="contractcontainer ">
-                        <div class="availablecontract"></div>
-                    </div>
                 </div> 
             </div>
         </div>  
@@ -120,29 +116,57 @@
                 <div class="sectiontitle">Contract History</div>
                 <div class="dividercontainer"><div class="divider"></div></div>
                 <div class="viewavailablecontracts">
-                    <div class="messagecontainer ">
-                        <div class="historycontract"></div>
+
+                    <div class="feedback">
+                        <div class="useranddate">
+                            <div class="user">
+                                    <div class="userpicture">
+                                        <div class="upicture"></div>
+                                    </div>
+                                    <div class="name feedbackname">Lebohang Mhlane</div>
+                                </div>
+                                <div class="date">
+                                    <div class="feedbackdate">3 January 2023</div>
+                                </div>
+                            </div>
+                            <div class="feedbackmessage">Excellent work! My wall looks great!</div>
+                            <div class="contractspacer"></div>
+                            <div class="details">Trust Rated: </div>
+                            <div class="rating">
+                                <img class="star" src="assets/Star-6.svg" alt="">
+                                <img class="star" src="assets/Star-6.svg" alt="">
+                                <img class="star" src="assets/Star-6.svg" alt="">
+                                <img class="star" src="assets/Star-6-white.svg" alt="">
+                                <img class="star" src="assets/Star-6-white.svg" alt="">
+                            </div>
                     </div>
-                    <div class="messagecontainer ">
-                        <div class="historycontract"></div>
+
+                    <div class="feedback" (click)="showSomething()">
+                        <div class="useranddate">
+                                <div class="user">
+                                    <div class="userpicture">
+                                        <div class="upicture"></div>
+                                    </div>
+                                    <div class="name feedbackname">Lebohang Mhlane</div>
+                                </div>
+                                <div class="date">
+                                    <div class="feedbackdate">3 January 2023</div>
+                                </div>
+                            </div>
+                            <div class="feedbackmessage">Excellent work! My wall looks great!</div>
+                            <div class="contractspacer"></div>
+                            <div class="details">Trust Rated: </div>
+                            <div class="rating">
+                                <img class="star" src="assets/Star-6.svg" alt="">
+                                <img class="star" src="assets/Star-6.svg" alt="">
+                                <img class="star" src="assets/Star-6.svg" alt="">
+                                <img class="star" src="assets/Star-6-white.svg" alt="">
+                                <img class="star" src="assets/Star-6-white.svg" alt="">
+                            </div>
+                        </div>  
                     </div>
-                    <div class="messagecontainer ">
-                        <div class="historycontract"></div>
-                    </div>
-                    <div class="messagecontainer ">
-                        <div class="historycontract"></div>
-                    </div>
-                    <div class="messagecontainer ">
-                        <div class="historycontract"></div>
-                    </div>
-                    <div class="messagecontainer ">
-                        <div class="historycontract"></div>
-                    </div>
-                    <div class="messagecontainer ">
-                        <div class="historycontract"></div>
-                    </div>
-                </div> 
-            </div>
+
+            </div> 
         </div>
 
     </div>
