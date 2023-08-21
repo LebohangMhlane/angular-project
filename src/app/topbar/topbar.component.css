@@ -68,6 +68,9 @@
     color: white;
     font-size: 12px;
 }
+.navbutton:hover{
+    background-color: #95c4d0;
+}
 .flag{
     flex:auto;
     margin-right: 2%;

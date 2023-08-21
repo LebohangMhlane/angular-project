@@ -30,11 +30,12 @@
                                 <div *ngIf="feedBackMessage.ratingSystem.oneStarRating"></div>
                                 <div *ngIf="feedBackMessage.ratingSystem.lowRating">
                                     <img class="star" src="assets/Star-6-yellow.svg" alt="" *ngFor="let star of feedBackMessage.ratingSystem.renderYellowStars()">
+                                    <img class="star" src="assets/Star-6-white.svg" alt="" *ngFor="let star of feedBackMessage.ratingSystem.renderWhiteStars()">
                                 </div>
                                 <div *ngIf="feedBackMessage.ratingSystem.lowRating == false">
                                     <img class="star" src="assets/Star-6.svg" alt="" *ngFor="let star of feedBackMessage.ratingSystem.renderGreenStars()">
+                                    <img class="star" src="assets/Star-6-white.svg" alt="" *ngFor="let star of feedBackMessage.ratingSystem.renderWhiteStars()">
                                 </div>
-                                <img class="star" src="assets/Star-6-white.svg" alt="" *ngFor="let star of feedBackMessage.ratingSystem.renderWhiteStars()">
                             </div>
                         </div>
                     </div>
@@ -49,7 +50,7 @@
             <div class="availablecontractscontainer mainbackgroundcolor">
                 <div class="sectiontitle">Offers</div>
                 <div class="dividercontainer"><div class="divider"></div></div>
-                <div class="viewavailablecontractsmiddle bottomfader">
+                <div class="viewavailablecontractsmiddle">
 
                     <div class="contractcontainer" *ngFor="let contract of availabeContracts">
                         <div class="availablecontract">
@@ -94,7 +95,7 @@
             <div class="profilecontainer">
                 <div class="profilesection1">
                     <div class="username">Lebohang Asanda Mhlane</div>
-                    <div class="skills">Plumbing | Tile Fitting |</div>
+                    <div class="skills">Plumbing | Tile Fitting</div>
                     <div class="usertype">Contractor</div>
                     <div class="dividercontainer"><div class="divider"></div></div>
                     <div class="skills">Contracts Completed: 2</div>
@@ -116,54 +117,33 @@
                 <div class="sectiontitle">Contract History</div>
                 <div class="dividercontainer"><div class="divider"></div></div>
                 <div class="viewavailablecontracts">
-
-                    <div class="feedback">
-                        <div class="useranddate">
-                            <div class="user">
-                                    <div class="userpicture">
-                                        <div class="upicture"></div>
-                                    </div>
-                                    <div class="name feedbackname">Lebohang Mhlane</div>
-                                </div>
-                                <div class="date">
-                                    <div class="feedbackdate">3 January 2023</div>
-                                </div>
-                            </div>
-                            <div class="feedbackmessage">Excellent work! My wall looks great!</div>
-                            <div class="contractspacer"></div>
-                            <div class="details">Trust Rated: </div>
-                            <div class="rating">
-                                <img class="star" src="assets/Star-6.svg" alt="">
-                                <img class="star" src="assets/Star-6.svg" alt="">
-                                <img class="star" src="assets/Star-6.svg" alt="">
-                                <img class="star" src="assets/Star-6-white.svg" alt="">
-                                <img class="star" src="assets/Star-6-white.svg" alt="">
-                            </div>
-                    </div>
-
-                    <div class="feedback" (click)="showSomething()">
-                        <div class="useranddate">
+                    
+                    <div class="historycontractcontainer">
+                        <div class="feedback">
+                            <div class="useranddate">
                                 <div class="user">
                                     <div class="userpicture">
                                         <div class="upicture"></div>
                                     </div>
-                                    <div class="name feedbackname">Lebohang Mhlane</div>
+                                    <div class="name feedbackname">By: Lebohang Mhlane</div>
+                                    </div>
+                                    <div class="date">
+                                        <div class="feedbackdate">3 January 2023</div>
+                                    </div>
                                 </div>
-                                <div class="date">
-                                    <div class="feedbackdate">3 January 2023</div>
+                                <div class="contracthistoryspacer"></div>
+                                <div class="contractstate details">Contract ID #22343</div>
+                                <div class="contractstate details">Service: Gardening</div>
+                                <div class="contractstate details">Status: Completed</div>
+                                <div class="details">Trust Rated: </div>
+                                <div class="rating">
+                                    <img class="star" src="assets/Star-6.svg" alt="">
+                                    <img class="star" src="assets/Star-6.svg" alt="">
+                                    <img class="star" src="assets/Star-6.svg" alt="">
+                                    <img class="star" src="assets/Star-6-white.svg" alt="">
+                                    <img class="star" src="assets/Star-6-white.svg" alt="">
                                 </div>
-                            </div>
-                            <div class="feedbackmessage">Excellent work! My wall looks great!</div>
-                            <div class="contractspacer"></div>
-                            <div class="details">Trust Rated: </div>
-                            <div class="rating">
-                                <img class="star" src="assets/Star-6.svg" alt="">
-                                <img class="star" src="assets/Star-6.svg" alt="">
-                                <img class="star" src="assets/Star-6.svg" alt="">
-                                <img class="star" src="assets/Star-6-white.svg" alt="">
-                                <img class="star" src="assets/Star-6-white.svg" alt="">
-                            </div>
-                        </div>  
+                        </div>
                     </div>
 
             </div> 
