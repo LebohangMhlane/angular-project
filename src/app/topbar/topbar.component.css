@@ -1,7 +1,7 @@
 
 .topnavbar{
     width: 100%;
-    height: 55px;
+    height: 5%;
     display: flex;
     cursor: pointer;
     font-size: 13px;
@@ -45,7 +45,8 @@
 
 .navigationbar{
     min-width: 100%;
-    height: 60px;
+    height: 5%;
+    max-height: 5%;
     display: flex;
     cursor: pointer;
 }
@@ -67,6 +68,7 @@
     justify-content: center;
     color: white;
     font-size: 12px;
+    transition: background-color 200ms;
 }
 .navbutton:hover{
     background-color: #95c4d0;
@@ -81,4 +83,51 @@
     width: 60px;
     height: 30px;
     background-color: green;
+}
+
+
+@media screen and (max-width:320px) {
+    .navigationbar{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .navbuttons{
+        display: none;
+    }
+    .mbutton{
+        width: auto;
+        height: auto;
+    }
+    .navbutton{
+        width: auto;
+        font-size: 10px;
+        padding: 0px 5px 0px 5px;
+    }
+    .topnavbar{
+        justify-content: space-between;
+    }
+    .topnavbar > :nth-child(1){ 
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        padding: 0px;
+    }
+    .topnavbar > :nth-child(2){
+        padding: 0px;
+    }
+    .topnavbar > :nth-child(3){
+        margin-left: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+    .section{
+        padding: 0px;
+    }
+}
+
+@media (min-width: 321px) {
+    .menubutton{
+        display: none;
+    }
 }
