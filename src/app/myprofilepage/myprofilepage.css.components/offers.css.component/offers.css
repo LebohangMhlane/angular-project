@@ -96,3 +96,42 @@
     border-radius: 10px;
     margin-right: 5px;
 }
+
+@media screen and (max-width:1212px){
+    .offers{
+        padding-left: 1.7%;
+    }
+
+    .title{
+        display: flex;
+        min-width: 100%;
+        justify-content: space-between;
+    }
+    .menubuttoncontainer{
+        display: block;
+        width: 40px;
+        height: 100%;
+        padding: 10px 0px 10px 0px;
+        margin-right: 27px;
+    }
+    .menubutton{
+        padding: 0px 5px 0px 5px;
+        border-radius: 10px;
+        width:100%;
+        height: 100%;
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        cursor: pointer;
+    }
+    .menubutton:hover{
+        background-color: rgba(255, 255, 255, 0.35);
+    }
+    .buttoncircle{
+        width: 6px;
+        height: 6px;
+        background-color: white;
+        border-radius: 10px;
+    }
+}

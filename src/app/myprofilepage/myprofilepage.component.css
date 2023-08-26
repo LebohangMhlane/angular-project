@@ -42,3 +42,9 @@ app-myprofilepage{
     color: white;
     font-size: 12px;
 }
+.menubutton{
+    display: none;
+}
+.menubuttoncontainer{
+    display: none;
+}

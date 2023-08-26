@@ -1,0 +1,44 @@
+
+/* profile section */
+.profilecontainer{
+    width: 100%;
+    height: 20%;
+}
+.innerprofilesection{
+    width: 95%;
+    height: 100%;
+    display: flex;
+}
+.profiledetailssection{
+    flex: 2;
+    color: white;
+    padding-top: 15px;
+}
+.pdetail{
+    width: 100%;
+    font-size: 13px;
+    padding: 0px 0px 10px 0px;
+}
+.profilepicturesection{
+    flex: 1;
+    padding: 10px 0px 10px 10px;
+    padding-top: 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+.ppicture{
+    min-width: 112px;
+    max-width: 112px;
+    width: 100%;
+    height: 50%;
+    background-color: #307584;
+    border-radius: 10px;
+}
+.profiledividercontainer{
+    padding-left: 0px;
+    padding-right: 30px;
+    height: 20px;
+}
+.profilerating{
+    padding: 0px;
+}
