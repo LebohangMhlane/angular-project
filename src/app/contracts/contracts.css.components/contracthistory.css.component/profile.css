@@ -49,3 +49,12 @@
     height: fit-content;
    } 
 }
+
+@media screen and (max-width:872px) {
+    .innerprofilesection{
+        width: 100%;
+    }
+    .profiledetailssection{
+        padding-top: 0px;
+    }
+}

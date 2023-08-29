@@ -42,3 +42,14 @@
     margin: 10px 0px 10px 0px;
     padding-left: 15px;
 }
+
+@media screen and (max-width:872px) {
+    .contracthistory{
+        width: 70%;
+        min-width: 100%;
+        padding: 20px;
+    }
+    .innercontracthistory{
+        width: 100%;
+    }
+}
