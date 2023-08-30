@@ -8,7 +8,7 @@ import { Component, Renderer2, ElementRef } from '@angular/core';
     './contracts.css.components/messages.css.component/messages.css',
     './contracts.css.components/offers.css.component/offers.css',
     './contracts.css.components/contracthistory.css.component/contracthistory.css',
-    './contracts.css.components/contracthistory.css.component/profile.css'
+    './contracts.css.components/profile.css.component/profile.css'
   ]
 })
 export class ContractsComponent {

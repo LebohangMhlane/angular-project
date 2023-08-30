@@ -7,6 +7,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { MainComponent } from './main/main.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { ContractsComponent } from './contracts/contracts.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { ContractsComponent } from './contracts/contracts.component';
     MainComponent,
     TopbarComponent,
     ContractsComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,

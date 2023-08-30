@@ -9,7 +9,7 @@
                 <div class="dividercontainer"><div class="divider"></div></div>
                 <div class="mainmessagescontainer">
 
-                    <div class="messagecontainer">
+                    <div class="messagecontainer" *ngFor="let contract of contracts">
                         <div class="message darkerthemecolor">
 
                             <div class="messageprofilepictureusernameanddate">
@@ -56,7 +56,7 @@
                 <div class="dividercontainer"><div class="divider"></div></div>
                 <div class="mainoffercontainer mainbackgroundcolor">
 
-                    <div class="offercontainer mainbackgroundcolor" (click)="printList()">
+                    <div class="offercontainer mainbackgroundcolor" *ngFor="let contract of contracts">
                         <div class="offer darkerthemecolor">
 
                             <div class="profilepictureusernameanddate">
@@ -135,7 +135,7 @@
                 <div class="dividercontainer"><div class="divider"></div></div>
                 <div class="maincontracthistorycontainer">
                     
-                    <div class="historycontractcontainer">
+                    <div class="historycontractcontainer" *ngFor="let contract of contracts">
                         <div class="historycontract darkerthemecolor">
 
                             <div class="messageprofilepictureusernameanddate">

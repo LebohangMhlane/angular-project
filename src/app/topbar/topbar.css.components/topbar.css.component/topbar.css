@@ -2,7 +2,8 @@
 
 .topnavbar{
     min-width: 100%;
-    height: 50px;
+    min-height: 40.44px;
+    height: 3vh;
     display: flex;
     cursor: pointer;
     font-size: 13px;

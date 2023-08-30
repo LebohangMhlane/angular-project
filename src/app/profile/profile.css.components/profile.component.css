@@ -1,0 +1,118 @@
+
+:host{
+    display: block;
+    height: 93vh;
+}
+
+.profilemain{
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    padding: 0% 20% 0% 20%;
+}
+
+
+
+.one{
+    flex: 1;
+    background-color: green;
+    /* min-height: 313.41px; */
+    display: flex;
+}
+.buttons{
+    background-color: grey;
+    flex: 1;
+    min-width: 448.67px;
+    max-width: 448.67px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+.buttons > :nth-child(3){
+    flex:4;
+}
+.radiusbuttons{
+    flex:1;
+    background-color: #292929;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.button{
+    background-color: #2da3c7;
+    color:white;
+    font-size: 12px;
+    border-radius: 5px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 0px 9px 0px;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: rgba(255, 255, 255, 0.245);
+}
+
+@media screen and (max-width:600px) {
+    .one{
+        flex-direction: column;
+    }
+    .buttons{
+        min-width: 100%;
+    }
+}
+
+.dropdowns{
+    background-color: black;
+    flex: 1;
+    /* min-width: 250.67px; */
+    padding: 10px;
+}
+.maindropdownview{
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+}
+.dropdownbuttoncontainer{
+    width: 100%;
+    height: 10%;
+    background-color: green;
+}
+.dropdownbutton{
+    background-color: grey;
+    width: 60px;
+    height: 100%;
+}
+.dropdownmenu{
+    width: 230px;
+    height: 250px;
+    background-color: blue;
+    position: absolute;
+}
+
+
+.scrolls{
+    background-color: green;
+    flex: 1;
+}
+
+
+
+
+.two{
+    flex: 2;
+    background-color: blue;
+}
+
+
+
+.three{
+    flex: 1;
+    background-color: black;
+    /* min-height: 313.41px; */
+}

@@ -1,7 +1,8 @@
 
 
 .navigationbar{
-    height: fit-content;
+    min-height: 53.91px;
+    height: 4vh;
     min-width: 100%;
     display: flex;
     align-items: stretch;
@@ -9,9 +10,9 @@
     cursor: pointer;
 }
 .navbuttons{
-    height: fit-content;
+    height: 100%;
     display: flex;
-    padding: 10px 0px 10px 0px;
+    align-items: center;
 }
 .navbuttons > :nth-child(1), :nth-child(2), :nth-child(3){
     max-width: fit-content;
@@ -40,8 +41,8 @@
     justify-content: center;
 }
 .theflag{
-    width: 60px;
-    height: 30px;
+    width: 35px;
+    height: 20px;
 }
 .navbarmenubuttoncontainer{
     min-width: 40px;
@@ -73,8 +74,6 @@
     .flag{
         margin: 0px;
         padding-left: 15px;
-    }
-    .navbarmenubuttoncontainer{
         display: flex;
     }
     .navbuttons{
@@ -88,5 +87,15 @@
         width: auto;
         font-size: 10px;
         padding: 0px 5px 0px 5px;
+    }
+}
+@media (min-width:510px) and (max-width:872px){
+    .flag{
+        display: none;
+    }
+}
+@media screen and (max-width:872px) {
+    .navbarmenubuttoncontainer{
+        display: flex;
     }
 }

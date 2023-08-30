@@ -5,10 +5,11 @@ body{
     font-family: 'Work Sans', sans-serif;
 }
 html{
-    height: 100%;
-    overflow: hidden;
+    height: 100vh;
+    overflow: auto;
 }
 app-root{
+    display: block;
     height: 100%;
 }
 * {
