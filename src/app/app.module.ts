@@ -8,7 +8,9 @@ import { MainComponent } from './main/main.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { ContractsComponent } from './contracts/contracts.component';
 import { ProfileComponent } from './profile/profile.component';
-import { AnimationsComponent } from './animations/animations.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { OpenCloseComponent } from './open-close/open-close.component';
+
 
 @NgModule({
   declarations: [
@@ -17,12 +19,13 @@ import { AnimationsComponent } from './animations/animations.component';
     TopbarComponent,
     ContractsComponent,
     ProfileComponent,
-    AnimationsComponent,
+    OpenCloseComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule, 
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [
     HttpClient,

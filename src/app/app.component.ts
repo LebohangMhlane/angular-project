@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 import { ApiService } from '../api-services/app.main-service';
 import { HttpClient } from '@angular/common/http';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
 
