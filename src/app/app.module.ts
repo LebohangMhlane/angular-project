@@ -8,6 +8,7 @@ import { MainComponent } from './main/main.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { ContractsComponent } from './contracts/contracts.component';
 import { ProfileComponent } from './profile/profile.component';
+import { AnimationsComponent } from './animations/animations.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ProfileComponent } from './profile/profile.component';
     TopbarComponent,
     ContractsComponent,
     ProfileComponent,
+    AnimationsComponent,
   ],
   imports: [
     BrowserModule,
