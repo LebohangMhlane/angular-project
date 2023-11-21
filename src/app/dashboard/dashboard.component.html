@@ -1,0 +1,55 @@
+
+<div class="main">
+
+    <!-- weather row -->
+    <div class="weatherAndShit">
+        <p>Oslo</p>
+        <p>-8 degrees</p>
+    </div>
+
+    <!-- search bar row -->
+    <div class="googleSearchBar">
+        <div class="searchBar">
+            <div class="googleIcon">
+                <img class="googleIconImage" src="assets/google.jpg" alt="">
+            </div>
+            <input class="searchInput" type="text" placeholder="Search the Web">
+            <div class="searchIcon">
+                <img class="searchIconImage" src="assets/search.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- smiley row -->
+    <div class="smileyRow">
+        <div class="smileyContainer">
+            <img class="smileyImage" src="assets/happy-outline.svg" alt="">
+        </div>
+    </div>
+
+    <!-- widget row -->
+    <div class="widgetRow">
+        <div class="widgetRowCenter">
+            
+            <!-- render widget item list -->
+            <div *ngFor="let widgetItem of listOfWidgetItems" class="col widgetItemContainer">
+                <div *ngIf="widgetItem['isCustom'] == true" class="widgetItem center">
+                    <img class="logo custom" src="{{ widgetItem['logo'] }}" alt="">
+                </div>
+                <div *ngIf="widgetItem['isCustom'] == false" class="widgetItem center">
+                    <img class="logo" src="{{ widgetItem['logo'] }}" alt="">
+                </div>
+                <div class="itemName center">{{ widgetItem["name"] }}</div>
+            </div>
+
+           <!-- add widgetItem -->
+            <div class="widgetItemContainer">
+                <div class="widgetItem center addItemIcon">
+                    +
+                </div>
+                <div class="itemName center invisibleText">""</div>
+            </div> 
+        </div>
+    </div>
+
+</div>

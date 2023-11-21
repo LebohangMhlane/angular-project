@@ -10,6 +10,7 @@ import { ContractsComponent } from './contracts/contracts.component';
 import { ProfileComponent } from './profile/profile.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { OpenCloseComponent } from './open-close/open-close.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { OpenCloseComponent } from './open-close/open-close.component';
     ContractsComponent,
     ProfileComponent,
     OpenCloseComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,

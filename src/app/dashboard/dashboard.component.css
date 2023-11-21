@@ -1,0 +1,150 @@
+
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.centerer{
+    width: 80%;
+    height: 100%;
+    background-color: grey;
+    margin: auto;
+    overflow: hidden;
+    padding: 10px;
+}
+
+/* weather row */
+.weatherAndShit{
+    width: 100%;
+    height: fit-content;
+    font-weight: bold;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    font-size: 13px;
+}
+p{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* google search bar row */
+.searchBar{
+    margin: auto;
+    width: 640px;
+    height: 64px;
+    border-radius: 100px;
+    background-color: white;
+    display: flex;
+}
+.googleIcon{
+    width: 60px;
+    height: 64px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.googleIconImage{
+    width: 40%;
+    height: 40%;
+    object-fit: contain;
+}
+.searchInput{
+    width: 82%;
+    height: 64px;
+    border: none;
+    outline: none;
+    cursor: text;
+}
+.searchIcon{
+    flex:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.searchIconImage{
+    width: 35%;
+    height: 35%;
+}
+
+/* smiley row */
+.smileyRow{
+    width: 100%;
+    height: fit-content;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.smileyContainer{
+    width: 930px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.smileyImage{
+    width: 16px;
+    height: 16px;
+}
+
+/* widget row */
+.widgetRow{
+    width: 100%;
+    height: fit-content;
+}   
+.widgetRowCenter{
+    width: fit-content;
+    max-width: 930px;
+    height: fit-content;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+.widgetItemContainer{
+    flex: 1;
+    float: left;
+    min-width: 155px;
+    max-width: 155px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    height: 130px;
+}
+.widgetItemContainer:hover{
+    scale: 1.04;
+    transition: scale 250ms;
+}
+.widgetItem{
+    flex: 7;
+    background-color: rgba(255, 255, 255, 0.349);
+    border-radius: 15px;
+    overflow: hidden;
+}  
+.logo{
+    width: 100%;
+    height: 100%;
+    object-fit: initial;
+} 
+.custom{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+}
+.addItemIcon{
+    font-weight: 300;
+    font-size: 30px;
+    color: white;
+}
+.itemName{
+    flex: auto;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+}
+.invisibleText{
+    color: rgba(255, 255, 255, 0);
+}
