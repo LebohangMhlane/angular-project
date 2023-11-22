@@ -15,5 +15,13 @@ export class DashboardComponent {
     {"name": "Gmail.com", "logo": "assets/gmailLogo.webp", "isCustom": true,},
   ];
 
+  widgetItemVisible: boolean = true;
+
+  addNewWidgetItem(){
+    this.listOfWidgetItems.push(
+      {"name": "Gmail.com", "logo": "assets/gmailLogo.webp", "isCustom": true}
+    );
+  }
+
 }
 

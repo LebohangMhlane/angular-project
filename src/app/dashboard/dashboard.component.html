@@ -1,5 +1,6 @@
 
 <div class="main">
+    <app-open-close></app-open-close>
 
     <!-- weather row -->
     <div class="weatherAndShit">
@@ -43,12 +44,13 @@
             </div>
 
            <!-- add widgetItem -->
-            <div class="widgetItemContainer">
+            <div (click)="addNewWidgetItem()" *ngIf="widgetItemVisible == true" class="widgetItemContainer">
                 <div class="widgetItem center addItemIcon">
                     +
                 </div>
                 <div class="itemName center invisibleText">""</div>
             </div> 
+            
         </div>
     </div>
 

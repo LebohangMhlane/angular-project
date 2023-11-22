@@ -11,14 +11,17 @@ import { Component } from '@angular/core';
         style({'background-color': 'grey'}),
         animate('2s', style({'background-color': 'blue'})),
         animate('2s', style({'background-color': 'black'})),
+        animate('2s', style({'background-color': 'brown'})),
       ]),
-      state('black', style({'background-color': 'black'})),
+      state('brown', style({'background-color': 'brown'})),
     ]),
   ]
 })
 export class OpenCloseComponent {
 
   colorIsBlack = true;
+
+  
 
   toggleColorChange(){
     this.colorIsBlack = !this.colorIsBlack;
