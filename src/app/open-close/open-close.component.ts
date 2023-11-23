@@ -7,24 +7,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./open-close.component.css'],
   animations: [
     trigger("changeColor", [
-      transition(":enter", [
-        style({'background-color': 'grey'}),
-        animate('2s', style({'background-color': 'blue'})),
-        animate('2s', style({'background-color': 'black'})),
-        animate('2s', style({'background-color': 'brown'})),
+      state("true", style({"background-color": "green"})),
+      state("false", style({"background-color": "blue"})),
+      transition("true => false", [
+        animate('2s'),
       ]),
-      state('brown', style({'background-color': 'brown'})),
+      transition("false => true", [
+        animate('2s'),
+      ]),
     ]),
   ]
 })
 export class OpenCloseComponent {
 
-  colorIsBlack = true;
-
+  colorIsInitial = "true";
   
-
   toggleColorChange(){
-    this.colorIsBlack = !this.colorIsBlack;
+    this.colorIsInitial =="true" ? 
+    this.colorIsInitial = "false" : 
+    this.colorIsInitial = "true";
   }
 
 }
