@@ -21,6 +21,9 @@ export class OperabrowserComponent {
     this.listOfWidgetItems.push(
       {"name": "Gmail.com", "logo": "assets/gmailLogo.webp", "isCustom": true}
     );
+    this.listOfWidgetItems.forEach((widgetItem) => {
+      console.log(widgetItem);
+    })
   }
 
 }
