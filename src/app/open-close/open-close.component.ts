@@ -23,7 +23,7 @@ export class OpenCloseComponent {
   colorIsInitial = "true";
   
   toggleColorChange(){
-    this.colorIsInitial =="true" ? 
+    this.colorIsInitial == "true" ? 
     this.colorIsInitial = "false" : 
     this.colorIsInitial = "true";
   }
