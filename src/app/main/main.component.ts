@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class MainComponent {
   httpService;
-  apiResponse: any;
+  jsonResponse: any;
 
   constructor(httpService: HttpClient){
     this.httpService = httpService;
@@ -16,22 +16,15 @@ export class MainComponent {
 
   currentDogImage: string = "";
   
-  displayMessage(event: any){
-  }
-
-  async updateDog(): Promise<string> {
+  async getDogImage() {
     try{
       let url = "https://dog.ceo/api/breeds/image/random";
-      let response: any =  this.httpService.get(url);
-      console.log(response.operator());
-      // .subscribe(data => {
-      //   this.apiResponse = data as Record<string, string>;
-      //   console.log(this.apiResponse["message"]);
-      // });
-      return this.apiResponse["message"];
-   } catch (error) {
-      return "";
-   }
+      this.httpService.get(url).subscribe(data => {
+        this.jsonResponse = data as Record<string, string>;
+      });
+    } catch (error) {
+      console.log("Failed to get image from api");
+    }
   }
 
 }
