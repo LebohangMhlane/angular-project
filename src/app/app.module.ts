@@ -7,8 +7,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { MainComponent } from './main/main.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { OpenCloseComponent } from './open-close/open-close.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { OperabrowserComponent } from './operabrowser/operabrowser.component';
 
 
 @NgModule({
@@ -16,8 +16,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     AppComponent,
     MainComponent,
     OpenCloseComponent,
-    DashboardComponent,
     SidebarComponent,
+    OperabrowserComponent,
   ],
   imports: [
     BrowserModule,

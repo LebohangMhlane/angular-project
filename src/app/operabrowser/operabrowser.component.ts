@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css']
+  selector: 'app-operabrowser',
+  templateUrl: './operabrowser.component.html',
+  styleUrls: ['./operabrowser.component.css']
 })
-export class DashboardComponent {
+export class OperabrowserComponent {
 
   listOfWidgetItems: Record<string, any>[] = [
     {"name": "YouTube.com", "logo": "assets/youtubesolid.jpg", "isCustom": false,},
@@ -24,4 +24,3 @@ export class DashboardComponent {
   }
 
 }
-
