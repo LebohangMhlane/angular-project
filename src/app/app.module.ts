@@ -4,20 +4,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { MainComponent } from './main/main.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { OpenCloseComponent } from './open-close/open-close.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { OperabrowserComponent } from './operabrowser/operabrowser.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainComponent,
     OpenCloseComponent,
     SidebarComponent,
     OperabrowserComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
