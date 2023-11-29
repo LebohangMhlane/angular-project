@@ -7,7 +7,7 @@ import { HttpClient } from "@angular/common/http"
 })
 export class ApiService{
 
-   httpClient;
+   httpClient: HttpClient;
    apiResponse: any;
 
    constructor(httpClient: HttpClient){
