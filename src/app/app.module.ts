@@ -11,6 +11,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { OpenCloseComponent } from './open-close/open-close.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     ProfileComponent,
     OpenCloseComponent,
     DashboardComponent,
+    SidebarComponent,
   ],
   imports: [
     BrowserModule,

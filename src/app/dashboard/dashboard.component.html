@@ -1,6 +1,5 @@
 
-<div class="main">
-    <app-open-close></app-open-close>
+<div class="dashboard-main">
 
     <!-- weather row -->
     <div class="weatherAndShit">
@@ -43,7 +42,7 @@
                 <div class="itemName center">{{ widgetItem["name"] }}</div>
             </div>
 
-           <!-- add widgetItem -->
+           <!-- add widgetItem button -->
             <div (click)="addNewWidgetItem()" *ngIf="widgetItemVisible == true" class="widgetItemContainer">
                 <div class="widgetItem center addItemIcon">
                     +

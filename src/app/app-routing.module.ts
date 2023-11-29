@@ -12,7 +12,6 @@ const routes: Routes = [
   {path: "myprofile", component: ProfileComponent},
   {path: "animations", component: OpenCloseComponent},
   {path: "dashboard", component: DashboardComponent},
-
 ];
 
 @NgModule({
