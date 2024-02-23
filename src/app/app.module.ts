@@ -9,6 +9,7 @@ import { OpenCloseComponent } from './animation/open-close.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { OperabrowserComponent } from './operabrowser/operabrowser.component';
 import { HomeComponent } from './home/home.component';
+import { DoggalleryComponent } from './doggallery/doggallery.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { HomeComponent } from './home/home.component';
     SidebarComponent,
     OperabrowserComponent,
     HomeComponent,
+    DoggalleryComponent,
   ],
   imports: [
     BrowserModule,
