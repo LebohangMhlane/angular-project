@@ -1,17 +1,31 @@
 <div class="mainContainer">
 
-    <div class="mainImageViewContainer">
+    <div class="mainGalleryContainer">
 
-        <div class="imageLayer">
-            <img class="dogImage" src="{{ dogImages[currentIndex] }}" alt="">
+        <div class="mainImageViewContainer">
+            <!-- dog image -->
+            <div class="imageLayer">
+                <img class="dogImage" src="{{ dogImages[currentIndex] }}" alt="">
+            </div>
+
+            <div class="buttonLayer">
+                <!-- previous image button -->
+                <div (click)="getPreviousDogImage()" class="backButton center">
+                    <p>Previous</p>
+                </div>
+                <!-- loading indicator -->
+                <div *ngIf="loadingImage" class="loadingIndicator">
+                    <img src="assets/beatinghearts.gif" alt="">
+                </div>
+                <!-- next image button -->
+                <div (click)="getNextDogImage()" class="nextButton center">
+                    <p>Next</p>
+                </div>
+            </div>
         </div>
 
-        <div class="buttonLayer">
-            <div (click)="getPreviousDogImage()" class="backButton"></div>
-            <div *ngIf="loadingImage" class="loadingIndicator">
-                <img src="assets/beatinghearts.gif" alt="">
-            </div>
-            <div (click)="getDogImage()" class="nextButton"></div>
+        <div class="interactionsBar">
+            <button (click)="favouriteADogImage()" class="favouriteButton">Favourite</button>
         </div>
 
     </div>

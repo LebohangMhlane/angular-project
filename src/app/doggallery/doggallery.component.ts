@@ -14,11 +14,13 @@ export class DoggalleryComponent {
     this.httpService = httpService;
   }
 
-  loadingImage : boolean = false;
   currentIndex : number = 0;
+  loadingImage : boolean = false;
+
+  favouriteDogImages : string[] = [];
   dogImages = ["https://images.dog.ceo/breeds/terrier-dandie/n02096437_3167.jpg"];
   
-  async getDogImage() {
+  async getNextDogImage() {
     try{
       this.loadingImage = true;
       let newIndex : number = this.currentIndex + 1;
@@ -43,4 +45,15 @@ export class DoggalleryComponent {
   getPreviousDogImage(){
     this.currentIndex = this.currentIndex - 1;
   }
+
+  favouriteADogImage(){
+    let currentDogImageViewed : string = this.dogImages[this.currentIndex];
+    if(this.favouriteDogImages.findIndex(value => value === currentDogImageViewed) == -1){
+      this.favouriteDogImages.push(
+        this.dogImages[this.currentIndex]
+      );
+    }
+    console.log(this.favouriteDogImages);
+  }
+
 }
