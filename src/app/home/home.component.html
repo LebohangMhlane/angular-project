@@ -1,11 +1,19 @@
 
-<div class="mainPage">
 
-    <div class="sideBar">
-        <app-sidebar (click)="getDogImage()" ></app-sidebar>
-    </div>
-    <div class="renderedPage">
-        <app-operabrowser></app-operabrowser>
+
+<div class="mainContainer">
+
+    <div class="mainImageViewContainer">
+
+        <div class="imageLayer">
+            <img class="dogImage" src="{{ dogImages[currentIndex] }}" alt="">
+        </div>
+
+        <div class="buttonLayer">
+            <div (click)="getPreviousDogImage()" class="backButton"></div>
+            <div (click)="getDogImage()" class="nextButton"></div>
+        </div>
+
     </div>
 
 </div>

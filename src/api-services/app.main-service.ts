@@ -16,7 +16,7 @@ export class ApiService{
    
    async getNewDogImage(): Promise<string> {
       try{
-         let url = "https://dog.ceo/api/breeds/image/random"
+         let url = "https://dog.ceo/api/breeds/image/random";
          await this.httpClient.get(url).subscribe(data => {
             this.apiResponse = data;
          });
