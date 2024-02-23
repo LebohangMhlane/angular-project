@@ -11,6 +11,9 @@
 
         <div class="buttonLayer">
             <div (click)="getPreviousDogImage()" class="backButton"></div>
+            <div *ngIf="loadingImage" class="loadingIndicator">
+                <img src="assets/beatinghearts.gif" alt="">
+            </div>
             <div (click)="getDogImage()" class="nextButton"></div>
         </div>
 

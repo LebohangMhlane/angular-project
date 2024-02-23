@@ -2,7 +2,6 @@
 .mainContainer{
     width: 100%;
     height: 100%;
-    background-color: #a1a1a1;
     display: flex;
 }
 
@@ -39,6 +38,10 @@
     transition: background-color 250ms;
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.5);
+}
+.loadingIndicator{
+    display: flex;
+    align-items: center;
 }
 .nextButton{
     background-color: rgba(0, 0, 0, 0.514);
