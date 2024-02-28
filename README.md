@@ -25,3 +25,10 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+Previews:
+
+An attempt at replicating a responsive Opera Browser Ui:
+
+
+![Opera Snapshot_2024-02-28_110416_localhost](https://github.com/LebohangMhlane/angular-project/assets/75252307/8d6a4b91-1459-4bcd-9144-b3916fde6b3b)
